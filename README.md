@@ -1,5 +1,5 @@
 # phpWebForwarder
-Host any website in the WWW without port forwarding, using VPN (e.g. Hamachi) and a bridge server.
+Host any website in the WWW without port forwarding, using VPN (e.g. Hamachi) and a bridge vServer.
 
 ## Disclaimer ##
 
@@ -7,28 +7,39 @@ This software is made to make a host, which is not accessible from the world wid
 But: It will work with nearly any host which is accessible from the bridge host, this means it will work with nearly any host in the world wide web.
 So it can also be used for simple rehosting.
 
-## Prerequisite ##
+## Prerequisites & Installation ##
 
-You need:
-- A web hosting account. You will find one which is for free or very cheap. You could take a look at the German providers lima-city.de (free, some limits) or la-webhosting.de (2€/month, no limits) => read more about limits at 'Bux fixes & tricks' section
+You need ...
 
-## Installation ## 
+#### A host ####
+Any computer running a HTTP server with your web project. Can be Windows, Linux, Max. ARM Linux is also supported.
 
+#### A logMeIn Hamachi account ####
+(Or any other VPN service which allows HTTP connections.)
 
+Register for Hamachi. Then create a new network and download and register the client for your host (the PC your are running your website).
+On Windows, you might disable the firewall for Hamachi.
 
-## Bug fixes & tricks ##
+#### A vServer ####
+(If you already have another server with root permissions, which is accessible from the WWW, you can take this one).
 
-You are be able to bypass some PHP settings (disable_functions, memory_limit, ...), which are set on you web hosting account.
-There might be some reasons you need more settings for:
+You need a vServer running Linux (as it is the cheapest, it would also work with Windows). I recommend Ubuntu or Debian, but it will work from any other distribution. 
+You can go to ionos.de, there you can buy one for 1€ / month. You can also go to Google Cloud Console and use your free credits for 6 months, but then you need to switch.
+If you use another site, make sure the server is accessible from the world wide web.
 
-#### max_execution_time bypass ####
+Then, install the following things:
+- PHP 8 with curl + Apache2. You can use this tutorial: https://www.linode.com/docs/guides/install-php-8-for-apache-and-nginx-on-ubuntu/. Make sure to chose Apache and not nginx!
+- LogMeIn Hamachi. Install it, then join your network. Then reboot.
+- Make a wget request to your host using the IP provided by Hamachi to check if the connection is established.
 
-If you want to start a PHP script, which is taking a long time, but you don't need to wait for the result, then simply add these lines to the top of the specific script:
+After that...
+- Grab the index.php file and the .htaccess file from this repository with your vServer
+- Move them to your Apache root directory
+- Edit the index.php file and add the Hamachi IP address of the host
 
-```php
-ignore_user_abort(true);
-set_time_limit(0);
-```
+THAT'S IT!
+
+## Bug fixes ##
 
 #### For other purposes ####
 
