@@ -1,6 +1,17 @@
 # phpWebForwarder
 Host any website in the WWW without port forwarding, using VPN (e.g. Hamachi) and a bridge vServer.
 
+#### Currently supported features ####
+
+- Full support for request & response headers, including status codes, redirects and cookies
+- Full support for text POST requests
+- Full support for subdirectories and URL parameters
+
+#### Currently not supported features ####
+
+- Post requests containing files
+- Responses containing anything except text
+
 ## Disclaimer ##
 
 This software is made to make a host, which is not accessible from the world wide web, accessible from the world wide web.
