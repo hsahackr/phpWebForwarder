@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{ENV:REDIRECT_STATUS} !=200
+ErrorDocument 200 /index.php
+RewriteRule !^s/index.php$ /index.php [L,R=200]
