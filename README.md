@@ -3,7 +3,7 @@ Host any website in the WWW without port forwarding, using VPN (e.g. Hamachi) an
 
 ## Disclaimer ##
 
-This software is built to make a host, which is not accessible from the world wide web, accessible from the world wide web.
+This software is made to make a host, which is not accessible from the world wide web, accessible from the world wide web.
 But: It will work with nearly any host which is accessible from the bridge host, this means it will work with nearly any host in the world wide web.
 So it can also be used for simple rehosting.
 
