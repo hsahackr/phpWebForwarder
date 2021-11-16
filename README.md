@@ -3,7 +3,7 @@ Host any website in the WWW without port forwarding, using VPN (e.g. Hamachi) an
 
 #### Currently supported features ####
 
-- Full support for request & response headers, including status codes, redirects and cookies
+- Full support for request & response headers, including status codes, redirects, hostname and cookies
 - Full support for text POST requests
 - Full support for subdirectories and URL parameters
 
