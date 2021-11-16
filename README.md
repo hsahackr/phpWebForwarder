@@ -21,7 +21,9 @@ You need:
 You are be able to bypass some PHP settings (disable_functions, memory_limit, ...), which are set on you web hosting account.
 There might be some reasons you need more settings for:
 
-If you want to start a PHP script in the background, which is taking a long time, but you don't need to wait for the result, then simply add these lines to the top of the specific script:
+#### max_execution_time bypass ####
+
+If you want to start a PHP script, which is taking a long time, but you don't need to wait for the result, then simply add these lines to the top of the specific script:
 
 ```php
 ignore_user_abort(true);
