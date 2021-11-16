@@ -49,7 +49,6 @@ foreach(explode("\n", $headers = substr($response, 0, $header_size)) as $header)
     header($header);
   }
 }
-header("Content-type: image/jpeg");
 header("X-Powered-By: phpForwarder");
 
 # Body response
