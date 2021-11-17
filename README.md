@@ -34,7 +34,7 @@ On Windows, you might disable the firewall for Hamachi.
 #### A vServer ####
 (If you already have another server with root permissions, which is accessible from the WWW, you can take this one).
 
-You need a vServer running Linux (as it is the cheapest, it would also work with Windows). I recommend Ubuntu or Debian, but it will work from any other distribution. 
+You need a vServer running Linux (as it is the cheapest, it would also work with Windows). I recommend Ubuntu or Debian, but it will work with any other distribution too. 
 You can go to ionos.de, there you can buy one for 1€ / month. You can also go to Google Cloud Console and use your free credits for 6 months, but then you need to switch.
 If you use another site, make sure the server is accessible from the world wide web.
 
