@@ -28,7 +28,7 @@ Any computer running a HTTP server with your web project. Can be Windows, Linux,
 #### A logMeIn Hamachi account ####
 (Or any other VPN service which allows HTTP connections.)
 
-Register for Hamachi. Then create a new network and download and register the client for your host (the PC your are running your website).
+Register for Hamachi. Then create a new network and download the client on your host (the PC your are running your website). Join your network.
 On Windows, you might disable the firewall for Hamachi.
 
 #### A vServer ####
