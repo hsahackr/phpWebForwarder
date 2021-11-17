@@ -9,7 +9,7 @@ Host any website in the WWW without port forwarding, using VPN (e.g. Hamachi) an
 
 #### Currently not supported features ####
 
-- Post requests containing files
+- POST requests containing files
 - Responses containing anything except text
 
 ## Disclaimer ##
@@ -23,7 +23,7 @@ So it can also be used for simple rehosting.
 You need ...
 
 #### A host ####
-Any computer running a HTTP server with your web project. Can be Windows, Linux, Max. ARM Linux is also supported.
+Any computer running a HTTP server with your web project. Can be Windows, Linux, MacOS. ARM Linux is also supported.
 
 #### A logMeIn Hamachi account ####
 (Or any other VPN service which allows HTTP connections.)
