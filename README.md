@@ -12,11 +12,9 @@ Host any website in the WWW without port forwarding, using VPN (e.g. Hamachi) an
 - POST requests containing files
 - Responses containing anything except text
 
-## Disclaimer ##
+## Note ##
 
 This software is made to make a host, which is not accessible from the world wide web, accessible from the world wide web.
-But: It will work with nearly any host which is accessible from the bridge host, this means it will work with nearly any host in the world wide web.
-So it can also be used for simple rehosting.
 
 ## Prerequisites & Installation ##
 
@@ -50,9 +48,8 @@ After that...
 
 THAT'S IT!
 
-## Bug fixes ##
-
-#### For other purposes ####
-
-If you try to use a host, which is already accessible from the world wide web, it might not work because the host detects the headers pointing to your bridge.
-You might simply solve it by excluding some headers in the "Headers request" section.
+## BUG FIXES ##
+It may not work because your local web server detects that the request is going to another hostname.
+You may fix it like this:
+- Run a clean install of Apache on your local device (no "dashboards")
+- Add the domain of your remote host to your local devices web server (may also work with dashboards, f.e. TinyCP)
